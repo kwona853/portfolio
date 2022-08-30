@@ -6,12 +6,34 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/webfont.css">
 	<link rel="stylesheet" href="css/pc.css">
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/index.js"></script>
+  <script src="js/dino-common.js"></script>
+  <script>
+    const clicked = () => { 
+      $('#header').toggleClass('on');
+      $('ul.level-2').toggleClass('on');
+    }
+    const buttonClicked = (btnIdx) => { 
+      const items = ['login', 'register', 'push-on', 'event'];
+      $(`.btn1`).removeClass('on');
+      $(`.btn2`).removeClass('on');
+      $(`.btn3`).removeClass('on');
+      $(`.btn4`).removeClass('on');
+      $(`.btn${btnIdx}`).toggleClass('on');
+      items.forEach(item => { 
+        $(`.${item}`).removeClass('on');
+      })
+      $(`.${items[btnIdx - 1]}`).toggleClass('on');
+      
+    }
+  </script>
 	<title>H-point</title>
 </head>
 
 <body>
   <a href="#main" id="skip-nav">본문 바로가기</a>
-  <header id="header" class="">
+  <header id="header" class="" onclick="clicked()">
     <div class="header-wrapper">
       <div class="right-link">
         <ul>
@@ -144,7 +166,6 @@
     </ul>
   </aside>
 
-
   <main id="main">
     <div id="wrapper">
       <section class="main-slide">
@@ -215,7 +236,7 @@
             <img src="img/img_sign_benefit0.png" alt="">
             <div class="image-animation">
               <ul>
-                <li class="log-in on">
+                <li class="log-in">
                   <img src="img/img_sign_benefit1.png" alt="">
                   <img src="img/img_benefit_obj1 .png" alt="" class="animation a">
                 </li>
@@ -248,25 +269,25 @@
             <p class="right-content">1분만에 <em>7,000P</em> 를 겟!</p>
               
             <ul class="button-indicator right-content">
-              <li class="top left">
+              <li class="top left btn1" onclick="buttonClicked(1)">
                 <img src="img/ic_benefit1.png" alt="">
                 <img src="img/ic_hover_benefit1.png" alt="" class="hover">
                 <p>APP 첫 로그인 <span>1,000P</span></p>
                 
               </li>
-              <li class="top right right-content">
+              <li class="top right right-content btn2" onclick="buttonClicked(2)">
                 <img src="img/ic_benefit2.png" alt="">
                 <img src="img/ic_hover_benefit2.png" alt="" class="hover">
                 <p>평생회원 동의 <span>1,000P</span></p>
                 
               </li>
-              <li class="bottom left right-content">
+              <li class="bottom left right-content btn3" onclick="buttonClicked(3)">
                 <img src="img/ic_benefit3.png" alt="">
                 <img src="img/ic_hover_benefit3.png" alt="" class="hover">
                 <p>Push ON <span>2,000P</span></p>
                 
               </li>
-              <li class="bottom right right-content">
+              <li class="bottom right right-content btn4" onclick="buttonClicked(4)">
                 <img src="img/ic_benefit4.png" alt="">
                 <img src="img/ic_hover_benefit4.png" alt="" class="hover">
                 <p>첫 적립 이벤트 참여 <span>3,000P</span></p>

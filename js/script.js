@@ -1,3 +1,5 @@
+'use strict';
+
 function isElementInViewport(elem) {
     var $elem = $(elem);
 
@@ -14,19 +16,20 @@ function isElementInViewport(elem) {
 }
 
 // Check if it's time to start the animation.
-function checkAnimation() {
-    var $elem = $('.bar .level');
-
+function startAnimation() {
+    console.log("animating")
+    var $elem = $('.web-design');
+    console.log("elem", $elem)
     // If the animation has already been started
-    if ($elem.hasClass('start')) return;
+    if ($elem.hasClass('slideIn')) return;
 
     if (isElementInViewport($elem)) {
         // Start the animation
-        $elem.addClass('start');
+        $elem.addClass('slideIn');
     }
 }
 
 // Capture scroll events
 $(window).scroll(function(){
-    checkAnimation();
+    startAnimation();
 });

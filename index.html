@@ -6,16 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ahyeon Kwon</title>
     <link rel="stylesheet" href="fontawesome-free-6.1.1-web/css/all.min.css" />
-    <link
-      rel="stylesheet"
-      href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css"
-    />
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css"/>
     <link rel="stylesheet" href="https://use.typekit.net/rxe8tro.css" />
     <link rel="stylesheet" href="css/pc.css" />
     <link rel="stylesheet" href="css/webfont.css" />
     <link rel="stylesheet" href="https://use.typekit.net/hhm0uny.css" />
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/dino-common.js"></script>
+    <script src="js/script.js"></script>
+	
   </head>
 
   <body>
@@ -43,7 +42,7 @@
 
     <aside id="aside">
       <div class="scroll-up">
-        <a href="#">
+        <a href="#main-page">
           <span></span>
           <img src="img/scrollUpBig.png" alt="" />
         </a>
@@ -53,7 +52,7 @@
     <main id="main">
       <div id="wrapper">
         <div class="scroll-container">
-          <section class="landing-page">
+          <section class="landing-page scroll-page" id="main-page">
             <div class="inner-box">
               <div class="logo-container">
                 <h1 class="main-logo">
@@ -71,7 +70,7 @@
               </div>
             </div>
           </section>
-          <section class="landing-page second">
+          <section class="landing-page second scroll-page">
             <div class="inner-box">
               <div class="logo-container">
                 <h1 class="main-logo">
@@ -81,10 +80,10 @@
               <p class="comment">THIS IS A 100% DESIGNED AND PUBLISHED</p>
             </div>
           </section>
-          <section class="illust-background">
+          <section class="illust-background scroll-page">
             <img src="img/animation background big.png" alt="" />
           </section>
-          <section class="text-animation">
+          <section class="text-animation scroll-page">
             <div class="animation-container marquee">
               <div class="one animation track">
                 <p class="content">
@@ -111,7 +110,7 @@
               </div>
             </div>
           </section>
-          <section class="about" id="about">
+          <section class="about scroll-page" id="about">
             <div class="inner-box">
               <div class="left-container">
                 <h4 class="about">ABOUT</h4>
@@ -129,7 +128,7 @@
                 </p>
               </div>
               <div class="circle-down-arrow">
-                <a href="#">
+                <a href="#about-2">
                   <img src="img/discoverAboutTextBig.png" alt="" class="text" />
                   <img src="img/about circle big.png" alt="" class="circle" />
                   <img src="img/down arrow big.png" alt="" class="arrow" />
@@ -137,7 +136,7 @@
               </div>
             </div>
           </section>
-          <section class="about-skills">
+          <section class="about-skills scroll-page" id="about-2">
             <div class="inner-box">
               <div class="background-text left">
                 <img src="img/life text big.png" alt="" />
@@ -181,14 +180,11 @@
               </div>
             </div>
           </section>
-          <section class="projects" id="project">
+          <section class="projects scroll-page" id="project">
             <div class="inner-box">
               <div class="left-container">
                 <h4 class="projects">PROJECTS</h4>
-                <p>
-                  SELECTED WORKS <br />
-                  THROUGHOUT THE YEARS
-                </p>
+                <p> SELECTED WORKS <br /> THROUGHOUT THE YEARS</p>
               </div>
 
               <p class="center-text">
@@ -196,54 +192,40 @@
               </p>
 
               <div class="circle-down-arrow">
-                <a href="#">
+                <a href="#project-extra">
                   <img src="img/DiscoverProjectsBig.png" alt="" class="text" />
-                  <img
-                    src="img/discover project circle big.png"
-                    alt=""
-                    class="circle"
-                  />
+                  <img src="img/discover project circle big.png" alt="" class="circle"/>
                   <img src="img/down arrow big.png" alt="" class="arrow" />
                 </a>
               </div>
 
-              <p class="right-bottom">
-                "90'S HEART, <br />
-                FUTURE'S MIND
-              </p>
+              <p class="right-bottom">"90'S HEART, <br />FUTURE'S MIND</p>
             </div>
           </section>
-          <section class="projects-extra">
+          <section class="projects-extra scroll-page" id="project-extra">
             <div class="inner-box">
               <ul class="selection">
                 <li class="publishing">
-                  <a href="#">
-                    <img src="img/click big.png" alt="" />
+                  <a href="#project-intro-publish">
+                    <img src="img/click big.png" alt="" >
                     <span></span>
                     <em>WEB PUBLISHING</em>
-                    <img
-                      src="img/project down arrow big.png"
-                      alt=""
-                      class="down"
-                    />
+                    <img src="img/project down arrow big.png"
+                      alt="" class="down" />
                   </a>
                 </li>
                 <li class="design">
-                  <a href="#">
+                  <a href="#project-intro-design">
                     <img src="img/click big.png" alt="" />
                     <span></span>
                     <em>GRAPHIC DESIGN</em>
-                    <img
-                      src="img/project down arrow big.png"
-                      alt=""
-                      class="down"
-                    />
+                    <img src="img/project down arrow big.png" alt="" class="down"/>
                   </a>
                 </li>
               </ul>
             </div>
           </section>
-          <section class="project-target">
+          <section class="project-target scroll-page" id="project-intro-publish">
             <div class="inner-box">
               <div class="box">
                 <div class="animation-container marquee">
@@ -280,7 +262,7 @@
               </div>
             </div>
           </section>
-          <section class="web-publishing one">
+          <section class="web-publishing one scroll-page">
             <div class="inner-box">
               <ul class="table-content">
                 <li class="project">
@@ -303,9 +285,7 @@
                     <span></span>
                   </div>
                   <div class="image">
-                    <a href="#"
-                      ><img src="img/dyptiqueFullScreen.png" alt=""
-                    /></a>
+                    <a href="https://www.ahyeonceckwon.com/dyptique/index.html"><img src="img/dyptiqueFullScreen.png" alt=""/></a>
                   </div>
                 </div>
                 <div class="right-box">
@@ -326,42 +306,35 @@
                   </div>
                   <ul class="right selection">
                     <li class="main on">
-                      <a href="#">
+                      <a href="https://www.ahyeonceckwon.com/dyptique/index.html">
                         <span class="circle"></span>
                         <em class="text">MAIN PAGE</em>
                         <img src="img/clickDiscoverTextBig.png" alt="" />
                       </a>
                     </li>
                     <li class="subpage one">
-                      <a href="#">
+                      <a href="https://www.ahyeonceckwon.com/dyptique/page/subpage-01.html">
                         <span class="circle"></span>
                         <em class="num">01.</em>
-                        <em class="text"
-                          >SUB <br />
-                          PAGE</em
-                        >
+                        <em class="text">SUB <br />PAGE</em>
                       </a>
                     </li>
                     <li class="subpage two">
-                      <a href="#">
+                      <a href="https://www.ahyeonceckwon.com/dyptique/page/subpage-02.html">
                         <span class="circle"></span>
                         <em class="num">02.</em>
-                        <em class="text"
-                          >SUB <br />
-                          PAGE</em
-                        >
+                        <em class="text">SUB <br />PAGE</em>
                       </a>
                     </li>
                   </ul>
                 </div>
               </div>
-
               <div class="left-bottom">
-                <a href="#">GITHUB</a>
+                <a href="https://github.com/kwona853/dyptique">GITHUB</a>
               </div>
             </div>
           </section>
-          <section class="web-publishing two">
+          <section class="web-publishing two scroll-page">
             <div class="inner-box">
               <ul class="table-content">
                 <li class="project">
@@ -384,7 +357,7 @@
                     <span></span>
                   </div>
                   <div class="image">
-                    <a href="#"><img src="img/hpointFUll.png" alt="" /></a>
+                    <a href="https://www.ahyeonceckwon.com/hpoint/index.html"><img src="img/hpointFUll.png" alt="" /></a>
                   </div>
                 </div>
                 <div class="right-box">
@@ -405,51 +378,42 @@
                   </div>
                   <ul class="right selection">
                     <li class="main on">
-                      <a href="#">
+                      <a href="https://www.ahyeonceckwon.com/hpoint/index.html">
                         <span class="circle"></span>
                         <em class="text">MAIN PAGE</em>
                         <img src="img/clickDiscoverTextBig.png" alt="" />
                       </a>
                     </li>
                     <li class="subpage one">
-                      <a href="#">
+                      <a href="https://www.ahyeonceckwon.com/hpoint/page/sub-point.html">
                         <span class="circle"></span>
                         <em class="num">01.</em>
-                        <em class="text"
-                          >SUB <br />
-                          PAGE</em
-                        >
+                        <em class="text">SUB <br />PAGE</em>
                       </a>
                     </li>
                     <li class="subpage two">
-                      <a href="#">
+                      <a href="https://www.ahyeonceckwon.com/hpoint/page/sub-point-gift.html">
                         <span class="circle"></span>
                         <em class="num">02.</em>
-                        <em class="text"
-                          >SUB <br />
-                          PAGE</em
-                        >
+                        <em class="text">SUB <br />PAGE</em>
                       </a>
                     </li>
                     <li class="subpage three">
-                      <a href="#">
+                      <a href="https://www.ahyeonceckwon.com/hpoint/page/sub-register-benefit.html">
                         <span class="circle"></span>
                         <em class="num">03.</em>
-                        <em class="text"
-                          >SUB <br />
-                          PAGE</em
-                        >
+                        <em class="text">SUB<br />PAGE</em>
                       </a>
                     </li>
                   </ul>
                 </div>
               </div>
               <div class="left-bottom">
-                <a href="#">GITHUB</a>
+                <a href="https://github.com/kwona853/hpoint">GITHUB</a>
               </div>
             </div>
           </section>
-          <section class="web-publishing three">
+          <section class="web-publishing three scroll-page">
             <div class="inner-box">
               <ul class="table-content">
                 <li class="project">
@@ -472,7 +436,7 @@
                     <span></span>
                   </div>
                   <div class="image">
-                    <a href="#"><img src="img/mastercardfull.png" alt="" /></a>
+                    <a href="https://www.ahyeonceckwon.com/mastercard/index.html"><img src="img/mastercardfull.png" alt=""/></a>
                   </div>
                 </div>
                 <div class="right-box">
@@ -493,32 +457,21 @@
                   </div>
                   <ul class="right selection">
                     <li class="main on">
-                      <a href="#">
+                      <a href="https://www.ahyeonceckwon.com/mastercard/index.html">
                         <span class="circle"></span>
                         <em class="text">MAIN PAGE</em>
                         <img src="img/clickDiscoverTextBig.png" alt="" />
-                      </a>
-                    </li>
-                    <li class="subpage one">
-                      <a href="#">
-                        <span class="circle"></span>
-                        <em class="num">01.</em>
-                        <em class="text"
-                          >SUB <br />
-                          PAGE</em
-                        >
                       </a>
                     </li>
                   </ul>
                 </div>
               </div>
               <div class="left-bottom">
-                <a href="#">GITHUB</a>
+                <a href="https://github.com/kwona853/mastercard">GITHUB</a>
               </div>
             </div>
           </section>
-
-          <section class="project-target">
+          <section class="project-target scroll-page" id="project-intro-design">
             <div class="inner-box">
               <div class="box">
                 <div class="animation-container marquee">
@@ -560,7 +513,7 @@
               </div>
             </div>
           </section>
-          <section class="web-design one">
+          <section class="web-design one scroll-page">
             <div class="inner-box">
               <ul class="table-content">
                 <li class="project">
@@ -617,8 +570,7 @@
               </div>
             </div>
           </section>
-
-          <section class="contact" id="contact">
+          <section class="contact scroll-page" id="contact">
             <div class="inner-box">
               <div class="right-info">
                 <h4>CONNECT</h4>
@@ -634,7 +586,7 @@
                   </li>
                 </ul>
                 <ul class="social-link">
-                  <li><a href="#">LINKEDIN</a></li>
+                  <li><a href="https://www.linkedin.com/in/ahyeonkwon/">LINKEDIN</a></li>
                   <li><a href="#">EMAIL</a></li>
                 </ul>
               </div>
