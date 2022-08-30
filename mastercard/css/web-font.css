@@ -1,0 +1,127 @@
+@charset "utf-8";
+
+@font-face {
+  font-family: mc-icon;
+  font-style: normal;
+  font-weight: 400;
+  src: local('※'),
+       url('../font/mc-icons.woff2') format('woff2'),
+       url('../font/mc-icons.woff') format('woff'),
+       url('../font/mc-icons.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: dxp-icon;
+  font-style: normal;
+  font-weight: 400;
+  src: local('※'),
+       url('../font/dxp-icons.woff2') format('woff2'),
+       url('../font/dxp-icons.woff') format('woff'),
+       url('../font//dxp-icons.ttf') format('truetype');
+}
+
+
+
+@font-face {
+  font-family: MarkForMC;
+  font-style: normal;
+  font-weight: 400;
+  src: local('※'),
+       url('../font/MarkForMC.woff2') format('woff2'),
+       url('../font/MarkForMC.woff') format('woff'),
+       url('../font/MarkForMC.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: MarkForMCNrw;
+  font-style: normal;
+  font-weight: 400;
+  src: local('※'),
+       url('../font/MarkForMCNrw.woff2') format('woff2'),
+       url('../font/MarkForMCNrw.woff') format('woff'),
+       url('../font/MarkForMCNrw.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: MarkForMC;
+  font-style: normal;
+  font-weight: 500;
+  src: local('※'),
+       url('../font/MarkForMC-Bold.woff2') format('woff2'),
+       url('../font/MarkForMC-Bold.woff') format('woff'),
+       url('../font/MarkForMC-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: MarkForMC;
+  font-style: normal;
+  font-weight: 300;
+  src: local('※'),
+       url('../font/MarkForMC-Lt.woff2') format('woff2'),
+       url('../font/MarkForMC-Lt.woff') format('woff'),
+       url('../font/MarkForMC-Lt.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: MarkForMC;
+  font-style: normal;
+  font-weight: 200;
+  src: local('※'),
+       url('../font/MarkForMC-ExtraLt.woff2') format('woff2'),
+       url('../font/MarkForMC-Lt.woff') format('woff'),
+       url('../font/MarkForMC-ExtraLt.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: MarkForMC-Med;
+  font-style: normal;
+  font-weight: 400;
+  src: local('※'),
+       url('../font/MarkForMC-Med.woff2') format('woff2'),
+       url('../font/MarkForMC-Med.woff') format('woff'),
+       url('../font/MarkForMC-Med.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: Helvetica Neue;
+  font-style: light;
+  font-weight: 400;
+  src: local('※'),
+       url('../font/helvetica-neue-light.woff2') format('woff2'),
+       url('../font/helvetica-neue-light.woff') format('woff'),
+       url('../font/helvetica-neue-light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: Arabic Regular;
+  font-style: normal;
+  font-weight: 400;
+  src: local('※'),
+       url('../font/FrutigerLTW23-55Roman.woff2') format('woff2'),
+       url('../font/FrutigerLTW23-55Roman.woff') format('woff'),
+       url('../font/FrutigerLTW23-55Roman.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: Arabic Narrow;
+  font-style: normal;
+  font-weight: 400;
+  src: local('※'),
+       url('../font/FrutigerLTArabic-57Cn.woff2') format('woff2'),
+       url('../font/FrutigerLTArabic-57Cn.woff') format('woff'),
+       url('../font/FrutigerLTArabic-57Cn.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: Arabic Narrow;
+  font-style: normal;
+  font-weight: 400;
+  src: local('※'),
+       url('../font/FrutigerLTArabic-57Cn.woff2') format('woff2'),
+       url('../font/FrutigerLTArabic-57Cn.woff') format('woff'),
+       url('../font/FrutigerLTArabic-57Cn.ttf') format('truetype');
+}
+
+
+
+

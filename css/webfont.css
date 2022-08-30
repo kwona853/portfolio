@@ -1,0 +1,193 @@
+@charset "utf-8";
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 100;
+  src: local('※'),
+       url('../font/Inter-Thin.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 200;
+  src: local('※'),
+       url('../font/Inter-ExtraLight.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300;
+  src: local('※'),
+       url('../font/Inter-Light.ttf') format('ttf');
+}
+
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  src: local('※'),
+       url('../font/Inter-Regular.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  src: local('※'),
+       url('../font/Inter-Medium.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  src: local('※'),
+       url('../font/Inter-SemiBold.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  src: local('※'),
+       url('../font/Inter-Bold.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 800;
+  src: local('※'),
+       url('../font/Inter-ExtraBold.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 900;
+  src: local('※'),
+    url('../font/Inter-Black.ttf') format('ttf');
+}
+
+
+
+@font-face {
+  font-family: 'Gelasio';
+  font-style: normal;
+  font-weight: 400;
+  src: local('※'),
+       url('../font/Gelasio-Regular.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'Gelasio';
+  font-style: normal;
+  font-weight: 500;
+  src: local('※'),
+       url('../font/Gelasio-Medium.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'Gelasio';
+  font-style: normal;
+  font-weight: 600;
+  src: local('※'),
+       url('../font/Gelasio-SemiBold.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'Gelasio';
+  font-style: normal;
+  font-weight: 700;
+  src: local('※'),
+       url('../font/Gelasio-Bold.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'LobsterTwo';
+  font-style: normal;
+  font-weight: 400;
+  src: local('※'),
+       url('../font/LobsterTwo-Regular.ttf') format('ttf');
+}
+@font-face {
+  font-family: 'LobsterTwo';
+  font-style: normal;
+  font-weight: 700;
+  src: local('※'),
+       url('../font/LobsterTwo-Bold.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'LobsterTwo';
+  font-style: italic;
+  font-weight: 700;
+  src: local('※'),
+       url('../font/LobsterTwo-BoldItalic.ttf') format('ttf');
+}
+
+
+
+
+@font-face {
+  font-family: 'MaruBuri';
+  font-style: normal;
+  font-weight: 200;
+  src: local('※'),
+       url('../font/MaruBuri-ExtraLight.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'MaruBuri';
+  font-style: normal;
+  font-weight: 300;
+  src: local('※'),
+       url('../font/MaruBuri-Light.ttf') format('ttf');
+}
+
+
+@font-face {
+  font-family: 'MaruBuri';
+  font-style: normal;
+  font-weight: 400;
+  src: local('※'),
+       url('../font/MaruBuri-Regular.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  src: local('※'),
+       url('../font/MaruBuri-SemiBold.ttf') format('ttf');
+}
+
+
+@font-face {
+  font-family: 'MaruBuri';
+  font-style: normal;
+  font-weight: 700;
+  src: local('※'),
+       url('../font/MaruBuri-Bold.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 800;
+  src: local('※'),
+       url('../font/Inter-ExtraBold.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 900;
+  src: local('※'),
+    url('../font/Inter-Black.ttf') format('ttf');
+}
+

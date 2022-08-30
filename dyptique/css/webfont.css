@@ -1,0 +1,39 @@
+@charset "utf-8";
+
+@font-face {
+  font-family: Calluna;
+  font-style: normal;
+  font-weight: 400;
+  src: local('※'),
+       url('../font/calluna-regular-webfont.woff2') format('woff2'),
+       url('../font/calluna-regular-webfont.woff') format('woff'),
+       url('../font/calluna-regular-webfont.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: dyptique-upd;
+  font-style: regular;
+  font-weight: 400;
+  src: local('※'),
+       url('../font/diptyque-upd.ttf.woff2') format('woff2'),
+       url('../font/diptyque-upd.ttf.woff') format('woff'),
+       url('../font/diptyque-upd.ttf.ttf') format('truetype');
+}
+@font-face {
+  font-family: luma-icons;
+  font-style: regular;
+  font-weight: 400;
+  src: local('※'),
+       url('../font/Luma-Icons.woff2') format('woff2'),
+       url('../font/Luma-Icons.woff') format('woff'),
+       url('../font/Luma-Icons.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: icomoon-icons;
+  font-style: regular;
+  font-weight: 400;
+  src: local('※'),
+       url('../font/icomoon.ttf.woff') format('woff'),
+       url('../font/icomoon-Icons.ttf') format('ttf'),
+}

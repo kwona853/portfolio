@@ -1,0 +1,368 @@
+@charset "utf-8";
+
+/* reset */
+html {-webkit-text-size-adjust: none; text-size-adjust: none;}
+body {margin: 0;}
+h1, h2, h3, h4, h5, h6, p, ul, ol {margin: 0; padding: 0;}
+h1, h2, h3, h4, h5, h6 {font-weight: 400;}
+a {color: inherit; text-decoration: inherit;}
+li {list-style: none;}
+address, em, i, cite {font-style: normal;}
+i[class^="fa"] {position: relative; display: inline-block; vertical-align: middle;}
+i[class^="fa"] span {position: absolute; left: -9999px;}
+
+/* common */
+body {font-family: 'Inter', 'MaruBuri'; font-size: 16px; font-weight: 400; color: #141413;}
+h3 {font-size: 12px; font-weight: 500; letter-spacing: 1.8px; line-height: 16px; color: #111;}
+span {font-size: 28px; line-height: 38px; font-weight: 400;}
+a {display: block;}
+a i {display: inline-block; font-size: 18px; line-height: 20px; margin-left: 5px;}
+
+#wrapper {overflow: hidden;}
+#skip-nav {position: fixed; left: 0; top: -41px; width: 100%; text-align: center; line-height: 40px; background-color: rgba(0, 0, 0, 0.6); color: #ffffff; font-size: 16px; border-bottom: 1px solid rgba(255, 255, 255, 0.8); transition: top 0.3s; z-index: 100000;}
+#skip-nav:focus {top: 0;}
+div.inner-box {overflow: hidden; position: relative; width: 93%; max-width: 1600px; min-width: 280px; margin: 0 auto; height: 100%;}
+div.scroll-container {scroll-snap-type: y mandatory; overflow: auto; height: 100vh;}
+
+/* header */
+#header {position: fixed; width: 100%; padding-top: 20px; z-index: 1;}
+#header p.logo {display: inline-block; font-size: 16px; font-weight: 600; }
+#header ul {overflow: hidden;}
+#header ul li {position: relative; float: left; font-size: 13px; font-weight: 500;}
+#header ul li a {display: block;}
+#header ul.left-link {margin-top: 5px;}
+#header ul.left-link li {margin-right: 15px;}
+#header ul.left-link li + li::after {content: ''; position: absolute; width: 1px; height: 12px; top: 50%; transform: translate(0, -50%); background-color: #111; left: -8px;}
+
+#header ul.left-link li.on {color: #FFFCF4; background-color: #111;padding: 0 5px;}
+#header ul.left-link li a:hover {color: #FFFCF4; background-color: #111;padding: 0 5px;}
+#header ul.right-link {position: absolute; right: 0; top: 20px;}
+#header ul.right-link li.language {margin-left: 15px;}
+#header ul.right-link li.language + li::after {content: ''; position: absolute; width: 1px; height: 12px; top: 50%; transform: translate(0, -50%); background-color: #111; left: -8px;}
+#header ul.right-link li.on {color: #FFFCF4; background-color: #111; padding: 0 5px;}
+#header ul.right-link li a:hover {color: #FFFCF4; background-color: #111; padding: 0 5px;}
+#header ul.right-link li.copyright {margin-right: 400px;}
+#header ul.right-link li.copyright img {width: 12px; height: 13px;}
+
+/* module */
+section {scroll-snap-align: start; height: 100vh;}
+
+section.landing-page {position: relative; background-color: #FFFCF4;}
+section.second.landing-page {background-color: #FFA995;}
+section.landing-page div.logo-container {position: relative; display: inline-block; left: 50%; top: 50%; transform: translate(-50%, -50%);}
+section.landing-page div.logo-container h1.main-logo { animation: bounce-in-right 2s ease;}
+@keyframes bounce-in-right {
+  0% {opacity: 0; transform: translateX(2000px);}
+  60% {opacity: 1; transform: translateX(-30px);}
+  80% { transform: translateX(10px); }
+  100% { transform: translateX(0); }
+}
+
+
+section.landing-page div.logo-container h2.animation-logo {position: absolute; top: -55px; left: 50%; transform: translate(-50%, 0); animation: mymove 3s; animation-fill-mode: forwards;}
+
+@keyframes mymove {
+  from {top: -600px;}
+  to {top: -50px;}
+}
+
+
+section.landing-page div.logo-container p {margin-top: 40px; text-align: center; font-family: "LobsterTwo"; font-style: italic; font-size: 20px; letter-spacing: 0.02px;}
+section.landing-page.second p.comment {font-size: 13px; font-family: "Inter"; font-style: normal; font-weight: 600; margin-top: 500px;}
+section.landing-page div.scroll-down {position: absolute; left: 50%; transform: translate(-50%, 0); bottom: 30px; height: 40px;}
+section.landing-page div.scroll-down img {position: absolute; left: 50%; transform: translate(-50%, 0); top: 0; width: 15px;}
+
+section.landing-page div.scroll-down p {font-size: 12px; font-weight: 700; left: 50%; margin-top: 30px;}
+
+section.illust-background {position: relative; background-color: #FFFCF4;}
+section.illust-background img {position: absolute; top: 155px; height: 100%; left: 50%; transform: translate(-50%, 0);}
+
+section.text-animation {position: relative; background: transparent radial-gradient(closest-side at 25% 59%, #FAD3CA 0%, #FFE4DB 33%, #FFFCF4 100%) 0% 0% no-repeat padding-box; opacity: 1;}
+section.text-animation div.marquee {position: relative;
+width: 100vw; max-width: 100%; overflow-x: hidden; font-size: 55px; letter-spacing: -0.5px; line-height: 66px; color: #111; font-weight: 800; top: 50%;}
+section.text-animation div.marquee div.track {white-space: nowrap; will-change: transform; animation: marquee 32s linear infinite;}
+section.text-animation div.marquee.two {color: #FFA995; }
+section.text-animation div.marquee.two div.track {white-space: nowrap; will-change: transform; animation: two 32s linear infinite;}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+@keyframes two {
+  from { transform: translateX(-50%); }
+  to { transform: translateX(0); }
+}
+
+section.text-animation div.bottom-container {margin-top: 90px;}
+section.text-animation div.bottom-container p {font-size: 25px; text-align: left; letter-spacing: -0.28px; line-height: 37px; color: #111; font-weight: 800;}
+section.text-animation div.bottom-container p > em {color: #FFA995;}
+
+
+section.project-target {position: relative; background-color: #FFFCF4;}
+section.project-target div.box {position: relative; width: 20%; background-color: #AD576B; left: 50%; transform: translate(-50%, 0); margin-top: 350px; overflow: hidden;}
+section.project-target div.marquee {position: relative; width: 100vw; max-width: 100%; overflow-x: hidden; font-size: 40px; letter-spacing: -0.5px; line-height: 40px; color: #111; font-weight: 800;}
+section.project-target div.marquee div.track {white-space: nowrap; will-change: transform; animation: marquee 32s linear infinite;}
+section.project-target div.marquee.two {color: #FFFCF4; }
+section.project-target div.marquee.two div.track {white-space: nowrap; will-change: transform; animation: two 32s linear infinite;}
+
+
+section.about {position: relative; background-color: #FFFCF4;}
+section.about div.left-container {position: absolute; text-align: left; margin-top: 204px; font-weight: 800;}
+section.about div.left-container h4.about {font-size: 65px; letter-spacing: -1.17px; line-height: 60px; font-weight: 800; margin-bottom: 20px; -webkit-text-stroke-width: 1px; -webkit-text-stroke-color: #95AF6D; color: transparent;}
+section.about div.left-container p.sub-font {font-size: 30px; letter-spacing: -0.7px; line-height: 39px; color: #95AF6D;}
+section.about div.right-container {position: absolute; width: 37%; right: 0; margin-top: 204px; font-weight: 300; text-align: left;}
+section.about div.right-container p {font-size: 20px; letter-spacing: -0.5px; line-height: 36px;}
+section.about div.right-container p + p {margin-top: 50px;}
+
+section.about-skills {position: relative; background: transparent radial-gradient(closest-side at 50% 37%, #C5D8A9 0%, #DEEFBC 50%, #FFFCF4 100%) 0% 0% no-repeat padding-box; opacity: 1;}
+section.about-skills div {top: 190px;}
+section.about-skills div p {font-size: 20px; letter-spacing: -0.36px; line-height: 28px; font-weight: 400;}
+section.about-skills div h4 {font-size: 50px; font-weight: 800; line-height: 80px; color: #95AF6D;}
+section.about-skills div.left-container {text-align: left; left: 0; width: 37%; color: #111;}
+section.about-skills div.left-container p + p {margin-top: 60px;}
+section.about-skills div.right-container {position: absolute; right: 0; top: 0;}
+section.about-skills div.right-container h4 {font-size: 30px; letter-spacing: -0.54px; font-weight: 800; line-height: 36px; color: #95AF6D; margin-bottom: 20px;}
+section.about-skills div.right-container.ko h4 {font-size: 40px; font-weight: 800; line-height: 60px; color: #95AF6D; margin-bottom: 20px;}
+
+section.about-skills div.right-container div.bottom-box {margin-top: 60px;}
+section.about-skills div.button {position: absolute; left: 50%; transform: translate(-50%, 0); top: 60%; width: 198px; height: 57px; }
+section.about-skills div.button img {width: 100%;}
+section.about-skills div.button a {display: block; position: absolute; padding: 10px 43px; border-radius: 30px; top: 18px; right: 0; font-size: 12px; background-color: #95AF6D; color: #FFFCF4; font-weight: 500;}
+section.about-skills div.button a:hover {background-color: #FFFCF4; color: #95AF6D; border: 1px solid #95AF6D; box-sizing: border-box;}
+
+section.about-skills div.background-text {position: absolute;}
+section.about-skills div.background-text img {width: 100%; opacity: 0.5;}
+section.about-skills div.background-text.right {position: absolute; width: 220px; height: 628px; right: 268px; top: -155px;}
+section.about-skills div.background-text.left {position: absolute; width: 431px; height: 220px; left: 180px; top: 205px;}
+
+section.projects {position: relative; background-color: #FFFCF4;}
+section.projects div.left-container {position: absolute; text-align: left; margin-top: 204px; font-weight: 800;}
+section.projects div.left-container h4.projects {font-size: 65px; letter-spacing: -1.17px; line-height: 60px; font-weight: 800; margin-bottom: 20px; -webkit-text-stroke-width: 1px;   -webkit-text-stroke-color: #AD576B; color: transparent;}
+section.projects div.left-container p {font-size: 30px; letter-spacing: -0.7px; line-height: 39px; color: #AD576B;}
+section.projects p.center-text {position: absolute; text-align: center; font-size: 14px; letter-spacing: 0.17px; line-height: 37px; bottom: 200px; left: 50%; transform: translate(-50%, 0); width: 753px; font-weight: 500;}
+section.projects p.right-bottom {position: absolute; font-size: 13px; text-align: left; font-weight: 600; letter-spacing: 0.02px; line-height: 18px; right: 0; bottom: 58px; color: #AD576B;}
+
+section.projects-extra {position: relative; width: 100%; background: url(../img/projectExtraBig.jpg) center center no-repeat; width: 100%; background-size: cover; }
+
+section.projects-extra ul.selection {display: flex; flex-direction: row; justify-content: space-evenly; margin-top: 140px;}
+section.projects-extra ul.selection li {position: relative; width: 310px;}
+section.projects-extra ul.selection li a {display: block;}
+section.projects-extra ul.selection li img {width: 105px; height: 97px;}
+section.projects-extra ul.selection li span {position: absolute;width: 58px; height: 58px; background-color: #AD576B; border-radius: 50%; left: 27px; bottom: 15px; }
+section.projects-extra ul.selection li em {position: absolute; font-size: 25px; letter-spacing: -0.23; line-height: 26px; top: 50%; transform: translate(0, -50%); font-weight: 600;}
+section.projects-extra ul.selection li img.down {position: absolute; width: 30px; height: 60px; left: 42px; bottom: -21px;}
+section.projects-extra ul.selection li a:hover img.down {transform: translateY(15px); transition: 0.6s;}
+
+
+
+section.web-publishing.one {background: url(../img/dyptiqueBackgroundBig.jpg) center center no-repeat; width: 100%; background-size: cover;}
+section.web-publishing.one ul.table-content li.project-name p {background-color: #FFD05B; color: #FFF6E2;}
+section.web-publishing.one ul.table-content li.project-type {color: #FFD05B;}
+section.web-publishing.one ul.table-content li.project-comment {color: #FFD05B;}
+section.web-publishing.one ul.selection li span {border: 1px solid #FFD05B;}
+section.web-publishing.one ul.selection li.on span {background-color: #FFD05B;}
+section.web-publishing.one ul.selection li em {color: #FFD05B;}
+section.web-publishing.one ul.selection li.main em {color: #FFF6E2;}
+section.web-publishing.one ul.selection li:hover span {background-color: #FFD05B;}
+section.web-publishing.one ul.selection li:hover em.text {color: #FFF6E2;}
+section.web-publishing.one div.right-box div.programs h4 {color: #FFD05B;}
+section.web-publishing.one div.left-bottom {background-color: #FFD05B;}
+
+section.web-publishing.two {background: url(../img/HpointBackgroundBig.jpg) center center no-repeat; width: 100%; background-size: cover;}
+section.web-publishing.two ul.table-content li.project-name p {background-color: #A892FF; color: #FFF6E2;}
+section.web-publishing.two ul.table-content li.project-type {color: #A892FF;}
+section.web-publishing.two ul.table-content li.project-comment {color: #A892FF;}
+section.web-publishing.two ul.selection li span {border: 1px solid #A892FF;}
+section.web-publishing.two ul.selection li.on span {background-color: #A892FF;}
+section.web-publishing.two ul.selection li em {color: #A892FF;}
+section.web-publishing.two ul.selection li.main em {color: #FFF6E2;}
+section.web-publishing.two ul.selection li:hover span {background-color: #A892FF;}
+section.web-publishing.two ul.selection li:hover em.text {color: #FFF6E2;}
+
+section.web-publishing.two div.right-box div.programs h4 {color: #A892FF;}
+section.web-publishing.two div.left-bottom {background-color: #A892FF;}
+
+section.web-publishing.three {background: url(../img/mastercardemptybig.jpg) center center no-repeat; width: 100%; background-size: cover;}
+section.web-publishing.three ul.table-content li.project-name p {background-color: #C93D3D; color: #FFF6E2;}
+section.web-publishing.three ul.table-content li.project-type {color: #C93D3D;}
+section.web-publishing.three ul.table-content li.project-comment {color: #C93D3D;}
+section.web-publishing.three ul.selection li span {border: 1px solid #C93D3D;}
+section.web-publishing.three ul.selection li.on span {background-color: #C93D3D;}
+section.web-publishing.three ul.selection li em {color: #C93D3D;}
+section.web-publishing.three ul.selection li.main em {color: #FFF6E2;}
+section.web-publishing.three ul.selection li:hover span {background-color: #C93D3D;}
+section.web-publishing.three ul.selection li:hover em.text {color: #FFF6E2;}
+section.web-publishing.three div.right-box div.programs h4 {color: #C93D3D;}
+section.web-publishing.three div.left-bottom {background-color: #C93D3D;}
+
+
+section.web-design.one {position: relative; padding-top: 100px; background-color: #FFFCF4;}
+section.web-design.one ul.table-content li.project-name p {background-color: #91A06F; color: #FFF6E2;}
+section.web-design.one ul.table-content li.project-type {color: #91A06F;}
+section.web-design.one ul.table-content li.project-comment {color: #91A06F;}
+section.web-design.one div.right-box div.outline-image {background-color: #91A06F;}
+section.web-design.one div.left-box ul.color-box li.one {background-color: #91A06F;}
+section.web-design.one div.left-box ul.color-box li.two {background-color: #FAB163;}
+section.web-design.one div.left-box ul.color-box li.three {background-color: #FFF4BA;}
+section.web-design.one div.left-box ul.color-box li.four {background-color: #F5E2AD;}
+
+
+
+section.contact {position: relative; background: url(../img/ContactBackgroundBig.jpg) center center no-repeat; width: 100%; background-size: cover;}
+section.contact div.right-info {position: absolute; right: 0; bottom: 88px;}
+section.contact div.right-info h4 {font-size: 44px; font-weight: 800; letter-spacing: 0.04px; line-height: 54px; color: #FFA995;}
+section.contact div.right-info h5 {font-size: 33px; font-weight: 600; letter-spacing: 0.04px; line-height: 40px; margin-bottom: 40px;}
+section.contact div.right-info ul {overflow: hidden; position: relative;}
+section.contact div.right-info ul li {float: left; font-size: 20px; letter-spacing: 0.02px; line-height: 35px; font-weight: 600;}
+section.contact div.right-info ul li.answer {margin-left: 40px; font-weight: 400;}
+section.contact div.right-info ul.social-link {margin-top: 30px; color: #FFFCF4;}
+section.contact div.right-info ul.social-link li {background-color: #667CF5; width: 130px; text-align: center; padding: 5px 0; border-radius: 25px;}
+section.contact div.right-info ul.social-link li + li {position: absolute; right: 0; background-color: #FAE098;}
+section.contact div.right-info ul.social-link li:hover {background-color: #FFFCF4; color: #667CF5;}
+section.contact div.right-info ul.social-link li + li:hover{background-color: #FFFCF4; color: #FAE098;}
+
+
+
+
+/* section module */
+section.web-publishing {position: relative; padding: 100px 0;}
+ul.table-content {position: relative; display: flex; flex-direction: row; justify-content: space-between; margin-bottom: 78px;}
+ul.table-content li {height: 100%;}
+ul.table-content li p {font-size: 14px; letter-spacing: 0.02px; line-height: 20px; font-family: "Gelasio"; font-weight: 400;}
+ul.table-content li p.project-num {font-weight: 700;}
+ul.table-content li.project-name{margin-right: 400px;}
+ul.table-content li.project-name p {padding: 4px 28px; box-sizing: border-box;}
+ul.table-content li.project-type { padding: 10px 0; margin-right: 226px;}
+ul.table-content li.project-comment {padding: 10px 0;}
+
+section.web-publishing div.content-wrapper {display: flex; justify-content: space-around; width: 100%;}
+section.web-publishing div.left-box {position: relative; width: 50%;}
+section.web-publishing div.left-box div.back-image {position: relative; width: 100%; height: 70%; border-radius: 15px; box-shadow: 2px 2px 5px #00000029; background-color: #FFFCF4;}
+
+
+section.web-publishing div.image {position: absolute; width: 80%; height: 95%; top: 20px; left: 50%; transform: translate(-50%, 0); overflow-y: scroll; border-radius: 10px; box-shadow: 2px 2px 5px #00000029;}
+section.web-publishing div.image img {width: 100%;}
+
+section.web-publishing div.left-bottom {padding: 5px 30px;margin-top: 10px; display: inline-block;}
+section.web-publishing div.left-bottom a {display: block; font-size: 12px; font-weight: 800; letter-spacing: 0.01px; line-height: 19px; color: #FFFCF4;}
+
+section.web-publishing div.right-box {width: 40%; margin-left: 10%; display: flex; flex-direction: column; justify-content: space-between;}
+section.web-publishing div.right-box div {font-size: 15px; letter-spacing: 0.02px; line-height: 30px; font-weight: 400; margin-bottom: 50px;}
+section.web-publishing div.right-box div.description p + p {margin-top: 30px;}
+section.web-publishing div.right-box div.programs {margin-top: 70px;}
+section.web-publishing div.right-box div.programs h4 {font-size: 25px; font-weight: 800; letter-spacing: 0.03px; line-height: 30px; margin-bottom: 15px;}
+
+section.web-publishing ul.selection {overflow: hidden; display: inline-block; margin-left: -33%;}
+section.web-publishing ul.selection li {position: relative; float: left; padding: 25px 20px; width: 61px; height: 89px; height: 41px;}
+section.web-publishing ul.selection li a {display: block;}
+section.web-publishing ul.selection li span {position: absolute; width: 61px; height: 61px; border-radius: 50%; box-sizing: border-box; box-shadow: 2px 2px 5px #00000029;}
+section.web-publishing ul.selection li.main em {width: 29px;}
+section.web-publishing ul.selection li em { position: absolute; font-size: 11px; font-weight: 700; letter-spacing: -0.23px; top: 60%; left: 50%; transform: translate(-50%, -50%);}
+section.web-publishing ul.selection li em.num {position: absolute; font-size: 15px; top: 28px; left: 69px;}
+section.web-publishing ul.selection li img {position: absolute; width: 88px; height: 80px; top: 9px; left: 9px;}
+
+
+section.web-design {position: relative; padding: 100px 0; background-color: #FFFCF4;}
+section.web-design div.content-wrapper {display: flex; justify-content: space-around; width: 100%;}
+section.web-design div.left-box {width: 35%;}
+section.web-design div.left-box div.title {color: #111; top: 0; left: 0; margin-bottom: 40px;}
+section.web-design div.left-box div.title p {font-size: 30px; letter-spacing: 0.03px; line-height: 36px; font-weight: 600;}
+section.web-design div.left-box div.title h4 {font-size: 44px; letter-spacing: 0.04px; line-height: 54px; font-weight: 800; animation-duration: 3s; animation-name: slidein;}
+
+@keyframes slidein {
+  from {
+    margin-right: 100%;
+    width: 300%;
+  }
+
+  75% {
+    font-size: 400%;
+    margin-right: 25%;
+    width: 150%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+section.web-design div.left-box div.title p.sub {font-size: 33px; letter-spacing: 0.03px; line-height: 40px;} 
+section.web-design div.left-box div.description {}
+section.web-design div.left-box div.description p {font-size: 15px; letter-spacing: 0.02px; line-height: 30px; font-weight: 400; margin-bottom: 50px; animation-duration: 3s; animation-name: slideIn;}
+
+@keyframes slidein {
+  from {
+    margin-right: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-right: 0%;
+    width: 100%;
+  }
+}
+section.web-design div.left-box ul.color-box {width: 100%; height: 80px; display: flex; justify-content: space-between;} 
+section.web-design div.left-box ul.color-box li {width: 80px; background-color: black;}
+
+
+
+section.web-design div.right-box {position: relative; width: 50%; margin-left: 15%;}
+section.web-design div.right-box div.outline-image {position: absolute; width: 80%; left: 50%; transform: translate(-50%, 0); background-color: black; height: 300px; margin-top: 100px; box-shadow: 2px 2px 5px #00000029;}
+section.web-design div.right-box div.image-box {position: absolute; height: 100%; width: 500px; left: 50%; top: 0; transform: translate(-50%, 0); overflow-y: scroll;} 
+
+section.web-design div.right-box div.image-box img {width: 100%;}
+
+
+
+
+
+
+
+
+
+/* button module */
+#aside {position: fixed; width: 40px; height: 40px; right: 3%; z-index: 3; bottom: 40px;}
+#aside a {display: block;}
+#aside a span {position: absolute; width: 40px; height: 40px; border-radius: 50%; background-color: #FFFCF4; box-shadow: 0px 5px 6px #00000029;}
+#aside a img {position: absolute; width: 20px; height: 11px; left: 50%; top: 50%; transform: translate(-50%, -50%);}
+#aside a:hover span {background-color: #FFA995;}
+#aside:hover {transform: translateY(-35px); transition: all 0.6s;}
+
+
+div.circle-down-arrow {position: absolute; left: 50%; transform: translate(-50%, 0); bottom: 58px; width: 76px; height: 69px;}
+div.circle-down-arrow a {display: block;}
+div.circle-down-arrow img {width: 76px; height: 70px;}
+div.circle-down-arrow img.circle {position: absolute; width: 42px; height: 42px; left: 50%; transform: translate(-50%, 0); top: 13px;}
+div.circle-down-arrow img.text {animation: rotation 6s infinite linear;}
+div.circle-down-arrow img.arrow {position: absolute; left: 50%; transform: translate(-50%, 0); bottom: -15px; width: 14px; height: 42px;}
+div.circle-down-arrow a:hover img.arrow {transform: translate(-50%, 0) translateY(10px); left: 50%; transition: all 0.6s;}
+div.circle-down-arrow div.circle {width: 70px; height: 67px; top: 0; bottom: 0; left: 0; right: 0; overflow: hidden; margin: auto 0; animation: circle 6s linear infinite;}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(369deg);
+  }
+}
+
+
+
+
+/* @keyframes circle{
+  0%{
+    transform:rotate(0deg)
+              translate(-165px)
+              rotate(0deg);
+  
+  }
+  100%{
+    transform:rotate(360deg)
+              translate(-165px)
+              rotate(-360deg);
+  }
+} */
+section.event-slide ul.event-swiper li a.image:hover {position: relative; transform: translateY(-10px);}
+

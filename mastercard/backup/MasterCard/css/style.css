@@ -1,0 +1,1129 @@
+@charset "utf-8";
+
+/* reset */
+html {-webkit-text-size-adjust: none; text-size-adjust: none;}
+body {margin: 0;}
+h1, h2, h3, h4, h5, h6, p, ul, ol {margin: 0; padding: 0;}
+h1, h2, h3, h4, h5, h6 {font-weight: 400;}
+a {color: inherit; text-decoration: inherit;}
+li {list-style: none;}
+address, em, i, cite {font-style: normal;}
+i[class^="fa"] {position: relative; display: inline-block; vertical-align: middle;}
+i[class^="fa"] span {position: absolute; left: -9999px;}
+
+/* common */
+body {font-family: 'MarkForMC'; font-size: 16px; font-weight: 400; color: #141413;}
+
+/* body h3 {font-family: 'MarkForMC-Bold'; font-size: 12px; color: #444340; line-height: 1rem;}
+body em {font-family: 'MarkForMC-Lt'; font-size: 36px; color: #141413}
+body h2 {font-family: 'MarkForMC-ExtraLt'; font-size: 60px; color: #141413; line-height: 4.5rem;}
+body span {font-family: 'MarkForMC-Lt'; font-size: 28px; color: #141413; line-height: 2.375rem;}
+
+header {font-family: 'MarkforMc'; font-size: 16px;} */
+
+
+#wrapper {overflow: hidden;}
+#skip-nav {position: fixed; left: 0; top: -41px; width: 100%; text-align: center; line-height: 40px; background-color: rgba(0, 0, 0, 0.6); color: #ffffff; font-size: 16px; border-bottom: 1px solid rgba(255, 255, 255, 0.8); transition: top 0.3s; z-index: 100000;}
+#skip-nav:focus {top: 0;}
+
+
+/* header */
+#header {
+    position: absolute;
+    /* position: fixed; */
+    /* left: 0;  */
+    top: 0;
+    left: 0;
+    width: 100%; 
+    /* min-width: 1185px;  */
+    height: 104px; 
+    color: #ffffff; 
+    border-bottom: 1px solid transparent; 
+    box-sizing: border-box;
+    transition: all 0.5s; 
+    /* background-color: pink; */
+    z-index: 9999;
+}
+
+#header:hover {
+    background-color: #141413;
+}
+
+#header > div.box {
+    position: relative; 
+    max-width: 1224px; 
+    height: 100%;
+    margin: 0 auto;
+}
+
+#header h1 {
+    position: absolute;
+    /* left: 0; */
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+#header h1 a {
+    display: block;
+    /* background-color: orange; */
+}
+
+#header h1 a img {
+    width: 65px;
+    display: block;
+}
+
+#gnb {
+    width: 100%;
+    height: 100%;}
+
+#gnb > ul.main-menu {
+    /* background-color: blue; */
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    text-align: center;
+    right: 100px;
+}
+
+#gnb > ul.main-menu > li > a:hover {
+    text-decoration: underline;
+}
+
+#gnb > ul.main-menu > li {
+    float: left;
+}
+
+#gnb > ul.main-menu > li > a {
+    display: block;  
+}
+
+#gnb > ul.main-menu > li + li {
+    margin-left: 50px;
+}
+
+#gnb > ul.main-menu > li > a > i {
+    margin-left: 11px; 
+}
+
+div.hamburger-menu {
+    display: none;
+}
+
+@media only screen and (max-width: 1400px) {
+    #header > div.box {
+        margin: 0 108px;
+    }
+}
+
+/* submenu */
+.level1Nav {
+    /* background-color: hotpink; */
+    position: absolute;
+    width: 260px;
+    left: 0;
+    top: 130px;
+    font-size: 23px;  
+}
+
+.level1Nav > ul > li > a {
+    display: block;
+    /* background-color: green; */
+    width: 170.7px;
+    top: 50%;
+    padding: 20px 0;
+}
+
+.level1Nav > ul > li > a > i {
+    position: absolute;
+    right: 0;
+    /* background-color: orange; */
+    
+}
+
+.level2Nav { 
+    position: absolute;
+    left: 300px;
+    top: 130px;
+    width: 246.5px;
+    /* background-color: aqua; */
+}
+
+.level2Nav > ul > li > a {
+    display: block;
+    /* background-color: green; */
+    width: 100%;
+    top: 50%;
+    line-height: 25px;
+}
+
+.level2Nav > ul > li + li {
+    margin-top: 10px;
+}
+
+.level3Nav { 
+    position: absolute;
+    left: 600px;
+    top: 130px;
+    width: 246.5px;
+    background-color: blue;
+}
+
+.level3Nav > ul > li > a {
+    display: block;
+    background-color: green;
+    width: 100%;
+    top: 50%;
+    line-height: 25px;
+}
+
+.level3Nav > ul > li + li {
+    margin-top: 10px;
+}
+
+.level4Nav { 
+    position: absolute;
+    left: 890px;
+    top: 130px;
+    background-color: gray;
+}
+
+.level4Nav > ul > li > a {
+    display: block;
+    background-color: green;
+    width: 100%;
+    top: 50%;
+    line-height: 25px;
+}
+
+.level4Nav > ul > li + li {
+    margin-top: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+
+
+/* gnb search */
+div.search-icon > a {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+    /* background-color: orange; */
+}
+
+div.search-icon > a i {
+    font-size: 18px;
+    /* background-color: black; */
+}
+
+div.search-icon > a span {
+    display: inline-block;
+    text-indent: -99999px;
+}
+
+/* sub-menu search */
+
+div.search-box {
+    display: none;
+    position: absolute;
+    top: 104px;
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 104px);
+    background-color: rgb(34, 34, 33);
+    color: #ffffff;
+}
+
+div.search-box.on {
+    display: block;
+}
+
+div.search-box > .box {
+    /* background-color: palevioletred; */
+    position: absolute;
+    width: 956px;
+    height: 318px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    top: 100px;
+}
+
+div.search-box > .box > p {
+    margin-top: 20px;
+}
+
+div.search-box > div.box > a {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 50px;
+}
+
+
+div.label {
+    position: absolute;
+    /* background-color: orange; */
+    /* left: 50%;
+    transform: translate(-50%, 0);  */
+    width: 405.3px;
+    height: 52px; 
+    left: 340px;
+    
+}
+
+/* div.label > label > span {
+    text-indent: -9999px;
+} */
+
+div.label #input {
+    position: absolute;
+    border-radius: 30px;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    box-sizing: border-box;
+    border: 1px solid #444340;
+    background-color: #444340;
+}
+
+div.label #input::placeholder {
+    padding:65.6px; 
+    font-size: 14px; 
+    color: #ffffff;
+}
+
+div.label > label > i {
+    position: absolute;
+    font-size: 17px;
+    top: 50%;
+    transform: translate(0, -50%);
+    left: 18px;
+}
+
+div.search-box > div.box > span {
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 38px;
+}
+
+.tag-list {
+    /* background-color: gray; */
+    height: 122.69px;
+    width: 314.33px;
+    margin: 24px 0;
+    color: rgb(177, 173, 166);
+    font-size: 16px;
+}
+
+.tag-list > li {
+    top: 0;
+}
+
+.tag-list > li+li {
+    margin: 24px 0;
+}
+
+.tag-list > li > a > span {
+    display: inline-block;
+    height: 20px;
+    width: 28px;
+    /* background-color: orange; */
+    font-size: 1rem;
+    left: 0; 
+    vertical-align: middle;
+}
+
+.tag-list > li:first-child > a > span > img {
+    width: 20px;  
+    height: 20px; 
+}
+
+.tag-list > li:nth-child(2) > a > span > img {
+    display: block;
+    margin-top: 0.5px;
+    height: 13.63px;
+    width: 20px;
+}
+
+.tag-list > li:last-child > a > span > img {
+    width: 12.73px;
+    height: 20px;
+}
+
+
+
+/* main */
+section.main-visual {
+    position: relative; 
+    width: 100%;
+    overflow: hidden;
+    height: 734px;
+}
+
+section.main-visual ul.video li {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+/* section.main-visual video {
+    background-color: pink;
+    left: 0;
+} */
+
+.main-visual ul.video > li > a {
+    display: block;
+    /* background-color: green; */
+    text-align: center;
+    bottom: 24px;
+    position: absolute;
+    height: 32px;
+    width: 32px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.main-visual ul.video > li > a > i {
+    font-size: 32px;
+    color: #ffffff;
+}
+
+section.main-visual div.tittle {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    left: 108px;
+    z-index: 999;
+    width: 600px;
+}
+
+section.main-visual div.tittle h3 {
+    font-size: 12px;
+    /* background-color: green; */
+    font-weight: 500;
+    letter-spacing: 1.8px;
+    color: #b1ada6;
+}
+
+section.main-visual div.tittle h2 {
+    font-size: 60px;
+    line-height: 72px;
+    color: rgb(255, 255, 255);
+    font-weight: 200;
+    margin-top: 17px;
+}
+
+@media only screen and (max-width: 986px) {
+    /* for tablet */
+    section.main-visual div.tittle {
+        width: 576px;
+        left: 36px;
+        z-index: 999;
+    }
+    
+}
+
+/* second visual */
+
+section.title div.title-box {
+    position: relative;
+    height: 650px;
+    width: 100%;
+    background: url(../img/african-american-women-hugging-1300x650\ \(1\).jpg) center center no-repeat;
+    background-size: cover;
+    
+}
+
+section.title:nth-of-type(3) div.title-box {
+    background-image: url(../img/female-scientist-looking-into-microscope-1300x650.jpg);
+    
+}
+
+section.title:nth-of-type(5) div.title-box {
+    background-image: url(../img/mastercard-cards-1300x650.jpg);
+    
+}
+
+
+
+/* section div.title-box img {
+    width: 100%;
+    position: relative;
+    /* height: 100%; */
+    /* top: 50%;
+    transform: translate(0, -50%); */
+
+
+section div.title-box > div.paragraph {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    left: 108px;
+    width: 600px;
+    /* background-color: pink; */
+    
+}
+
+section div.title-box > div.paragraph > h2 {
+    font-size: 60px;
+    line-height: 72px;
+    color: rgb(255, 255, 255);
+    font-weight: 200;
+}
+
+section div.title-box > div.paragraph > a {
+    position: absolute;
+    height: 24px;
+    margin-top: 20px;
+    color: rgb(255, 255, 255);
+    width: 114px;
+    font-family: MarkForMC-Med;
+    font-weight: 400;
+    font-size: 16px;
+    /* background-color: blue; */
+}
+
+section div.title-box > div.paragraph > a > i {
+    position: absolute;
+    box-sizing: border-box;
+    right: 0;
+    top: 0;
+    font-size: 20px;
+    /* background-color: green; */
+}
+
+section div.title-box > div.paragraph > a.card {
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 30px;
+    box-sizing: border-box;
+    text-align: center;
+    width: 134px;
+    height: 39px;
+    line-height: 33px;
+}
+
+/* image slide */
+div.image-slide {
+    position: relative;
+}
+
+div.image-slide ul.slide {
+    position: relative;
+    height: 737px;
+    width: 100%;
+}
+
+div.image-slide ul.slide li {
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+ul.slide > li div.slide-box {
+    /* background-color: aqua; */
+    position: absolute;
+    right: 0;
+    width: 50%;
+    height: 100%;
+}
+
+ul.slide li div.image-box {
+    position: absolute;
+    /* background-color: orange; */
+    height: 100%;
+    left: 0;
+    width: 50%;
+}
+
+ul.slide div.image-box > div.image {
+    height: 100%;
+    width: 100%;
+}
+
+section.image1 ul.slide > li:first-child div.image {
+    background: url(../img/asian-mom-using-laptop-with-baby-at-home-720x810.jpg) left center no-repeat;
+    background-size: cover;
+}
+
+section.image1 ul.slide > li:nth-child(2) div.image{
+    background: url(../img/female-steel-worker-holding-tablet-inside-factory-720x810.jpg) left center no-repeat;
+    background-size: cover;
+}
+section.image1 ul.slide > li:nth-child(3) div.image{
+    background: url(../img/shop-assistant-working-in-indoor-potted-plant-store-720x810.jpg) left center no-repeat;
+    background-size: cover;
+}
+section.image1 ul.slide > li:nth-child(4) div.image{
+    background: url(../img/woman-holding-card-reader-man-paying-with-mastercard-720x810.jpg) left center no-repeat;
+    background-size: cover;
+}
+
+section.image2 ul.slide > li:first-child div.image {
+    background: url(../img/hip-young-man-holding-phone-720x810.jpg) left center no-repeat;
+    background-size: cover;
+}
+
+section.image2 ul.slide > li:nth-child(2) div.image {
+    background: url(../img/woman-online-shopping-with-laptop_720x810.jpg) left center no-repeat;
+    background-size: cover;
+}
+
+ul.slide > li div.content {
+    /* background-color: beige; */
+    width: 484px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+     
+}
+
+ul.slide > li div.content > h3 {
+    font-size: 12px;
+    /* background-color: green; */
+    font-weight: 500;
+    letter-spacing: 1.8px;
+    
+}
+
+ul.slide > li div.content > em {
+    font-size: 36px;
+    line-height: 42px;
+    /* background-color: pink; */
+    margin-top: 22px;
+    display: block;
+    font-weight: 300;
+    
+}
+
+ul.slide > li div.content > p {
+    font-size: 18px;
+    line-height: 26px;
+    /* background-color: purple; */
+    margin-top: 16px;
+    font-family: MarkForMCNrw;
+}
+
+ul.slide > li div.content > a {
+    display: block;
+    /* background-color: white; */
+    border: 2px solid rgb(207, 69, 0);
+    border-radius: 30px;
+    margin-top: 22px;
+    width: 140px;
+    height: 37px;
+    text-align: center;
+    line-height: 35px;
+    color: rgb(207, 69, 0) ;
+    font-family: MarkForMC-Med;
+}
+
+ul.slide li.hidden {
+    display: none;
+}
+
+/* indicator */
+
+div.indicator {
+    position: absolute;
+    bottom: 40px;
+    right: 38%;
+}
+div.indicator ul {
+    background-color: palegoldenrod;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+}
+
+div.indicator ul li {
+    float: left;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    box-sizing: border-box;
+    border: 2px solid #141413;
+    background: transparent;
+    text-indent: -999px;
+    overflow: hidden;
+}
+
+div.indicator ul li.on {
+    background-color: #141413;
+}
+
+div.indicator ul  li + li {
+    margin-left: 8px;
+}
+
+
+/* grid main */
+section.grid-main {
+    background-color: rgb(50, 50, 49);
+    /* position: relative; */
+}
+
+section.grid-main div.container {
+    /* background-color: rgb(50, 50, 49); */
+    padding: 40px 0;
+    width: 1181px; 
+    margin: 0 auto;
+    height: 100%;
+    /* position: relative; */
+}
+
+section.grid-main section {
+    /* background-color: hotpink; */
+    height: 343px;
+}
+
+/* middle grid */
+section.grid-main section:nth-child(2) {
+    /* background-color: blue; */
+    margin: 25px 0;
+}
+section.grid-main section:nth-child(2) div.visual {
+    position: relative;
+}
+
+section.grid-main section:nth-child(2) div.sub-content {
+    left: 0;
+    top: 50%;
+    transform: translate(0, 35%);
+}
+/* middle grid end */
+
+section.grid-main div.visual {
+    position: relative;
+}
+
+section.grid-main li.grid-image > div.image {
+    background-color: pink;
+    width: 610px;
+    height: 343px;
+}
+
+section.grid-main div.visual:first-of-type li.grid-image > div.image {
+    background: url(../img/woman-looking-out-window-in-city_1280x720.jpg)center center no-repeat;
+    background-size: cover;
+}
+section.grid-main section:nth-child(2) div.visual li.grid-image > div.image {
+    float: right;
+    background: url(../img/overhead-shot-of-woman-on-laptop-1280x720.jpg)center center no-repeat;
+    background-size: cover;
+}
+
+section.grid-main section:nth-child(3) div.visual li.grid-image > div.image {
+    background: url(../img/family-wrapping-presents-for-winter-holidays-1280x720.jpg)center center no-repeat;
+    background-size: cover;
+
+}
+/* section.grid-main div.visual li.grid-image:nth-child(3) > div.image {
+    background: url(../img/woman-looking-out-window-in-city_1280x720.jpg)center center no-repeat;
+    background-size: cover;
+} */
+
+
+
+section.grid-main div.sub-content {
+    /* background-color: white; */
+    width: 516px;
+    float: right;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    color: rgb(255, 255, 255);
+}
+
+section.grid-main div.sub-content h3 {
+    font-size: 12px;
+    /* background-color: green; */
+    font-weight: 500;
+    letter-spacing: 1.8px;
+    color: rgb(177, 173, 166);
+}
+
+section.grid-main div.sub-content span {
+    font-size: 28px;
+    line-height: 42px;
+    /* background-color: gray; */
+    margin-top: 22px;
+    display: block;
+    font-weight: 300;
+}
+
+section.grid-main div.sub-content a {
+    display: block;
+    /* background-color: red; */
+    margin-top: 20px;
+    width: 111px;
+    font-family: MarkForMC-Med;
+    color: rgb(177, 173, 166);
+
+}
+
+section.grid-main div.sub-content a i {
+    /* background-color: purple; */
+    height: 20px;
+    width: 20px;
+    text-align: center;
+    right: 0;
+    display: block;
+    float: right;
+    color: rgb(255, 255, 255);
+    line-height: 20px;
+}
+/* grid main end */
+
+/* newsroom main */
+
+section div.background-box {
+    /* background-color: aqua; */
+    position: relative;
+    background-color: rgb(248, 247, 245);
+}
+
+section div.box {
+    position: relative;
+    /* background-color: pink; */
+    width: 1224px;
+    margin: 0 auto;
+    padding-top: 97px;
+}
+
+section div.box span.title {
+    display: block;
+    /* background-color: hotpink; */
+    font-size: 28px;
+    margin-bottom: 24px;
+}
+
+section div.box ul.newsroom-list {
+    /* background-color: hotpink; */
+    overflow: hidden;
+    
+}
+
+section div.box ul.newsroom-list li {
+    width: 390px;
+    float: left;
+    margin-bottom: 40px;
+   
+}
+
+section div.box ul.newsroom-list li + li{
+    margin-left: 27px;
+}
+
+section div.box ul.newsroom-list li ul li.newsroom-image > div.image {
+
+    width: 100%;
+    height: 218.99px;
+}
+
+section div.box ul.newsroom-list li h3 {
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 1.8px;
+    margin-top: 43px;
+}
+
+section div.box ul.newsroom-list li span {
+    font-size: 28px;
+    font-weight: 300;
+    line-height: 38px;
+    margin: 12px 0 11px;
+    display: block;
+}
+
+section div.box ul.newsroom-list li a {
+    margin-top: 25px;
+    display: block;
+}
+
+section div.box ul.newsroom-list li a i {
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    color: rgb(207, 69, 0) ;
+    box-sizing: border-box;
+}
+
+
+section.newsroom div.box li:first-child > ul > li > div.image {
+    background: url(../img/couple-on-couch-with-laptop-1280x720.jpg)center center no-repeat;
+    background-size: cover;
+}
+section.newsroom div.box li:nth-child(2) > ul > li > div.image {
+    background: url(../img/man-on-bus-1280x720.jpg)center center no-repeat;
+    background-size: cover;
+}
+section.newsroom div.box li:nth-child(3) > ul > li > div.image {
+    background: url(../img/metaverse-1280x720.jpeg)center center no-repeat;
+    background-size: cover;
+}
+
+/* newsroom main end */
+
+/* home main */
+
+section.home {
+    /* display: block; */
+    position: relative;
+    height: 86px;
+    background-color: #323231;
+}
+
+section.home div.button {
+    width: 1188px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    height: 100%;  
+    color: rgb(177, 173, 166);
+}
+
+section.home div.button a {
+    height: 100%;
+    display: block;
+    padding-top: 35px;
+}
+
+section.home div.button a i {
+    padding-left: 10px;
+    font-family: MarkForMCNrw;
+}
+
+/* home main end */
+
+/* footer */
+#footer {
+    background-color: #141413;
+    position: relative;
+    color: #ffffff;
+}
+
+#footer div.content-wrapper {
+    /* background-color: hotpink; */
+    width: 1260px;
+    margin: 0 auto;
+}
+
+#footer div.content-wrapper div.inner-box {
+    /* background-color: palegoldenrod; */
+    position: relative;
+    width: 100%;
+    margin: 40px 0;
+}
+
+#footer div.content-wrapper div.box {
+    /* background-color: pink; */
+    width: 291px;
+    height: 272px;
+}
+
+#footer div.content-wrapper h1.footer-logo {
+    /* background-color: gray; */
+    display: block;
+    width: 65px;
+    height: 40px;
+    padding-top: 80px;
+}
+
+#footer div.content-wrapper div.box a {
+    /* background-color: orange; */
+    width: 65px;
+}
+
+#footer div.content-wrapper div.box em {
+    /* background-color: blue; */
+    display: block;
+    font-size: 24px;
+    margin: 15px 0 40px;
+    color:rgb(255, 255, 255);
+}
+
+#footer div.content-wrapper div.box:nth-child(2) li {
+    /* background-color: orange; */
+    margin: 0 0 24px;
+}
+
+#footer div.content-wrapper div.box:nth-child(2) li a img {
+    /* background-color: blue; */
+    height: 20px;
+    width:20px;
+    margin: 0 8px 0 0;
+    vertical-align: middle;
+}
+
+ul.regulation li:first-child > a img {
+    width: 20px;  
+    height: 20px; 
+    /* background-color: palegreen; */
+}
+ul.regulation li:nth-child(2) > a img {
+    width: 20px;  
+    height: 20px;  
+    /* background-color: #444340;  */
+}
+
+ul.regulation li:nth-child(3) > a img {
+    width: 12.73px;
+    height: 20px;
+    /* background-color: aquamarine; */
+}
+
+ul.regulation {
+    /* background-color: orange; */
+    color: rgb(177, 173, 166);
+}
+
+ul.regulation li > a img {
+    padding: 0 8px 0 0;
+    /* background-color: pink; */
+}
+
+ul.regulation li {
+    margin-bottom: 24px ;
+    font-family: MarkForMC-Med; 
+}
+
+#footer .content-wrapper #footer-gnb {
+    /* background-color: greenyellow; */
+    width: 525px;
+    height: 272px;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    right: 0;
+}
+
+#footer #footer-gnb > ul > li.company {
+    /* background-color: orange; */
+    float: left;
+    height: 100%;
+    display: block;
+    width: 262px;
+    
+}
+
+#footer #footer-gnb > ul > li p {
+    color: rgb(177, 173, 166) ;
+    letter-spacing: 1.8px;
+    /* background-color: paleturquoise; */
+    margin: 0 0 19px;
+    font-size: 14px;
+}
+
+#footer #footer-gnb > ul > li > ul {
+    /* background-color: antiquewhite; */
+    height: 100%;
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    
+}
+
+#footer #footer-gnb > ul > li > ul > li {
+    font-family: MarkForMCNrw;
+    margin: 0px 0px 10px;
+    line-height: 24px;
+
+}
+
+#footer #footer-gnb > ul > li.mastercard-sites {
+    /* background-color: yellow; */
+    height: 100%;
+}
+
+
+#footer .content-wrapper > div.bottom-footer {
+    /* background-color: purple; */
+    width: 100%;
+    padding: 40px 0;
+    position: relative;
+    border-top: solid 2px rgb(68, 67, 64);;
+    height: 37.5px;
+    font-family: MarkForMCNrw;
+}
+
+#footer .content-wrapper > div.bottom-footer > p {
+    /* background-color: pink; */
+    display: inline-block;
+    width: 315px;
+    height: 42px;
+    top: 50%;
+    padding-top: 8px;
+}
+
+#footer .content-wrapper > div.bottom-footer div.footer-gnb > ul {
+    /* background-color: aliceblue; */
+    overflow: hidden;
+    float: left;
+}
+
+#footer .content-wrapper > div.bottom-footer div.footer-gnb > ul > li {
+    /* background-color: bisque; */
+    float: left;
+    right: 0;
+    display: inline-block;
+}
+
+#footer .content-wrapper > div.bottom-footer > div.footer-gnb {
+    /* background-color: gray; */
+    float: right;
+    width: 945px;
+}
+
+#footer .content-wrapper > div.bottom-footer div.footer-gnb > ul.privacy {
+    width: 419px;
+    top: 50%;
+    transform: translate(0, 50%);
+}
+
+#footer .content-wrapper > div.bottom-footer div.footer-gnb > ul.privacy > li {
+    /* background-color: yellow; */
+    padding: 0 15px;
+}
+
+#footer .content-wrapper > div.bottom-footer div.footer-gnb > ul.lang {
+    top: 50%;
+    transform: translate(0, 50%);
+}
+
+#footer .content-wrapper > div.bottom-footer div.footer-gnb > ul.lang > li {
+    /* background-color: beige; */
+    width: 312px;
+    padding-left: 8px;
+} 
+
+#footer .content-wrapper > div.bottom-footer div.footer-gnb > ul.link {
+    width: 206px;
+}
+
+#footer .content-wrapper > div.bottom-footer div.footer-gnb > ul.link > li {
+    /* background-color: aqua; */
+    padding: 4px;
+    display: block;
+}
+
+#footer .content-wrapper > div.bottom-footer div.footer-gnb > ul.link > li > a i {
+    font-size: 26px;
+    padding: 4px;
+}
+
+#footer .content-wrapper > div.bottom-footer div.footer-gnb > ul.link > li:first-child {
+    padding-left: 33px;
+} 
+
+
+
+
+
+

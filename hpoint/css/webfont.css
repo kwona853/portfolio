@@ -1,0 +1,96 @@
+@charset "utf-8";
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 800;
+  src: local('※'),
+       url('../font/NotoSansKR-Bold.woff2') format('woff2'),
+       url('../font/NotoSansKR-Bold.woff') format('woff'),
+       url('../font/NotoSansKR-Bold.ttf') format('ttf');
+}
+
+@font-face {
+  font-family:  'Noto Sans KR';
+  font-style: normal;
+  font-weight: 600;
+  src: local('※'),
+       url('../font/NotoSansKR-Medium.woff2') format('woff2'),
+       url('../font/NotoSansKR-Medium.woff') format('woff'),
+       url('../font/NotoSansKR-Medium.ttf') format('ttf');
+}
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 400;
+  src: local('※'),
+       url('../font/NotoSansKR-Regular.woff2') format('woff2'),
+       url('../font/NotoSansKR-Regular.woff') format('woff'),
+       url('../font/NotoSansKR-Regular.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 350;
+  src: local('※'),
+       url('../font/NotoSansKR-DemiLight.woff2') format('woff2'),
+       url('../font/NotoSansKR-DemiLight.woff') format('woff'),
+       url('../font/NotoSansKR-DemiLight.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 300;
+  src: local('※'),
+       url('../font/NotoSansKR-Light.woff2') format('woff2'),
+       url('../font/NotoSansKR-Light.woff') format('woff'),
+       url('../font/NotoSansKR-Light.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'HGGGothicssi';
+  font-style: normal;
+  font-weight: 900;
+  src: local('※'),
+       url('../font/HGGGothicssi_Pro_99g.woff') format('woff'),
+       url('../font/HGGGothicssi_Pro_99g.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'HGGGothicssi';
+  font-style: normal;
+  font-weight: 800;
+  src: local('※'),
+       url('../font/HGGGothicssi_Pro_80g.woff') format('woff'),
+       url('../font/HGGGothicssi_Pro_80g.ttf') format('ttf');
+}
+
+@font-face {
+  font-family:'HGGGothicssi';
+  font-style: normal;
+  font-weight: 600;
+  src: local('※'),
+       url('../font/HGGGothicssi_Pro_60g.woff') format('woff'),
+       url('../font/HGGGothicssi_Pro_60g.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'HGGGothicssi';
+  font-style: normal;
+  font-weight: 400;
+  src: local('※'),
+       url('../font/HGGGothicssi_Pro_40g.woff') format('woff'),
+       url('../font/HGGGothicssi_Pro_40g.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'HGGGothicssi';
+  font-style: normal;
+  font-weight: 200;
+  src: local('※'),
+       url('../font/HGGGothicssi_Pro_20g.woff') format('woff'),
+       url('../font/HGGGothicssi_Pro_20g.ttf') format('ttf');
+}
+
