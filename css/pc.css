@@ -47,12 +47,12 @@ div.scroll-container {scroll-snap-type: y mandatory; overflow: auto; height: 100
 #header ul.right-link li.copyright img {width: 12px; height: 13px;}
 
 /* module */
-section {scroll-snap-align: start; height: 100vh;}
+section {scroll-snap-align: start; height: 100vh; padding-top: 130px;}
 
 section.landing-page {position: relative; background-color: #FFFCF4;}
 section.second.landing-page {background-color: #FFA995;}
 section.landing-page div.logo-container {position: relative; display: inline-block; left: 50%; top: 50%; transform: translate(-50%, -50%);}
-section.landing-page div.logo-container h1.main-logo { animation: bounce-in-right 2s ease;}
+section.landing-page.one div.logo-container h1.main-logo { animation: bounce-in-right 2s ease;}
 @keyframes bounce-in-right {
   0% {opacity: 0; transform: translateX(2000px);}
   60% {opacity: 1; transform: translateX(-30px);}
@@ -60,20 +60,21 @@ section.landing-page div.logo-container h1.main-logo { animation: bounce-in-righ
   100% { transform: translateX(0); }
 }
 
+section.landing-page div.logo-container h2.animation-logo {position: absolute; top: -55px; left: 50%; transform: translate(-50%, 0);}
+section.landing-page.one div.logo-container h2.animation-logo {position: absolute; top: -55px; left: 50%; transform: translate(-50%, 0); animation: mymove 3s; animation-fill-mode: forwards;}
 
-section.landing-page div.logo-container h2.animation-logo {position: absolute; top: -55px; left: 50%; transform: translate(-50%, 0); animation: mymove 3s; animation-fill-mode: forwards;}
 
 @keyframes mymove {
   from {top: -600px;}
   to {top: -50px;}
 }
 
-
 section.landing-page div.logo-container p {margin-top: 40px; text-align: center; font-family: "LobsterTwo"; font-style: italic; font-size: 20px; letter-spacing: 0.02px;}
-section.landing-page.second p.comment {font-size: 13px; font-family: "Inter"; font-style: normal; font-weight: 600; margin-top: 500px;}
+section.landing-page.second div.bottom-text {position: absolute; bottom: 30px;}
+section.landing-page.second p.comment {font-size: 13px; font-family: "Inter"; font-style: normal; font-weight: 600;}
+
 section.landing-page div.scroll-down {position: absolute; left: 50%; transform: translate(-50%, 0); bottom: 30px; height: 40px;}
 section.landing-page div.scroll-down img {position: absolute; left: 50%; transform: translate(-50%, 0); top: 0; width: 15px;}
-
 section.landing-page div.scroll-down p {font-size: 12px; font-weight: 700; left: 50%; margin-top: 30px;}
 
 section.illust-background {position: relative; background-color: #FFFCF4;}
@@ -95,7 +96,7 @@ section.text-animation div.marquee.two div.track {white-space: nowrap; will-chan
   to { transform: translateX(0); }
 }
 
-section.text-animation div.bottom-container {margin-top: 90px;}
+section.text-animation div.bottom-container {position: absolute; bottom: 159px;}
 section.text-animation div.bottom-container p {font-size: 25px; text-align: left; letter-spacing: -0.28px; line-height: 37px; color: #111; font-weight: 800;}
 section.text-animation div.bottom-container p > em {color: #FFA995;}
 
@@ -127,7 +128,7 @@ section.about-skills div.right-container h4 {font-size: 30px; letter-spacing: -0
 section.about-skills div.right-container.ko h4 {font-size: 40px; font-weight: 800; line-height: 60px; color: #95AF6D; margin-bottom: 20px;}
 
 section.about-skills div.right-container div.bottom-box {margin-top: 60px;}
-section.about-skills div.button {position: absolute; left: 50%; transform: translate(-50%, 0); top: 60%; width: 198px; height: 57px; }
+section.about-skills div.button {position: absolute; left: 50%; transform: translate(-50%, 0); top: 63%; width: 198px; height: 57px; }
 section.about-skills div.button img {width: 100%;}
 section.about-skills div.button a {display: block; position: absolute; padding: 10px 43px; border-radius: 30px; top: 18px; right: 0; font-size: 12px; background-color: #95AF6D; color: #FFFCF4; font-weight: 500;}
 section.about-skills div.button a:hover {background-color: #FFFCF4; color: #95AF6D; border: 1px solid #95AF6D; box-sizing: border-box;}
@@ -184,7 +185,7 @@ section.web-publishing.two ul.selection li:hover em.text {color: #FFF6E2;}
 section.web-publishing.two div.right-box div.programs h4 {color: #A892FF;}
 section.web-publishing.two div.left-bottom {background-color: #A892FF;}
 
-section.web-publishing.three {background: url(../img/mastercardemptybig.jpg) center center no-repeat; width: 100%; background-size: cover;}
+section.web-publishing.three {background: url(../img/MastercardBackgroundBig.jpg) center center no-repeat; width: 100%; background-size: cover;}
 section.web-publishing.three ul.table-content li.project-name p {background-color: #C93D3D; color: #FFF6E2;}
 section.web-publishing.three ul.table-content li.project-type {color: #C93D3D;}
 section.web-publishing.three ul.table-content li.project-comment {color: #C93D3D;}
@@ -198,7 +199,7 @@ section.web-publishing.three div.right-box div.programs h4 {color: #C93D3D;}
 section.web-publishing.three div.left-bottom {background-color: #C93D3D;}
 
 
-section.web-design.one {position: relative; padding-top: 100px; background-color: #FFFCF4;}
+section.web-design.one {position: relative; background-color: #FFFCF4;}
 section.web-design.one ul.table-content li.project-name p {background-color: #91A06F; color: #FFF6E2;}
 section.web-design.one ul.table-content li.project-type {color: #91A06F;}
 section.web-design.one ul.table-content li.project-comment {color: #91A06F;}
@@ -227,7 +228,7 @@ section.contact div.right-info ul.social-link li + li:hover{background-color: #F
 
 
 /* section module */
-section.web-publishing {position: relative; padding: 100px 0;}
+section.web-publishing {position: relative;}
 ul.table-content {position: relative; display: flex; flex-direction: row; justify-content: space-between; margin-bottom: 78px;}
 ul.table-content li {height: 100%;}
 ul.table-content li p {font-size: 14px; letter-spacing: 0.02px; line-height: 20px; font-family: "Gelasio"; font-weight: 400;}
@@ -264,7 +265,7 @@ section.web-publishing ul.selection li em.num {position: absolute; font-size: 15
 section.web-publishing ul.selection li img {position: absolute; width: 88px; height: 80px; top: 9px; left: 9px;}
 
 
-section.web-design {position: relative; padding: 100px 0; background-color: #FFFCF4;}
+section.web-design {position: relative; background-color: #FFFCF4;}
 section.web-design div.content-wrapper {display: flex; justify-content: space-around; width: 100%;}
 section.web-design div.left-box {width: 35%;}
 section.web-design div.left-box div.title {color: #111; top: 0; left: 0; margin-bottom: 40px;}
