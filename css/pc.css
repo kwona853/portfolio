@@ -47,12 +47,13 @@ div.scroll-container {scroll-snap-type: y mandatory; overflow: auto; height: 100
 #header ul.right-link li.copyright img {width: 12px; height: 13px;}
 
 /* module */
-section {scroll-snap-align: start; height: 100vh; padding-top: 130px;}
+section {scroll-snap-align: start; height: 100vh;}
 
 section.landing-page {position: relative; background-color: #FFFCF4;}
 section.second.landing-page {background-color: #FFA995;}
 section.landing-page div.logo-container {position: relative; display: inline-block; left: 50%; top: 50%; transform: translate(-50%, -50%);}
 section.landing-page.one div.logo-container h1.main-logo { animation: bounce-in-right 2s ease;}
+
 @keyframes bounce-in-right {
   0% {opacity: 0; transform: translateX(2000px);}
   60% {opacity: 1; transform: translateX(-30px);}
@@ -63,7 +64,6 @@ section.landing-page.one div.logo-container h1.main-logo { animation: bounce-in-
 section.landing-page div.logo-container h2.animation-logo {position: absolute; top: -55px; left: 50%; transform: translate(-50%, 0);}
 section.landing-page.one div.logo-container h2.animation-logo {position: absolute; top: -55px; left: 50%; transform: translate(-50%, 0); animation: mymove 3s; animation-fill-mode: forwards;}
 
-
 @keyframes mymove {
   from {top: -600px;}
   to {top: -50px;}
@@ -72,7 +72,6 @@ section.landing-page.one div.logo-container h2.animation-logo {position: absolut
 section.landing-page div.logo-container p {margin-top: 40px; text-align: center; font-family: "LobsterTwo"; font-style: italic; font-size: 20px; letter-spacing: 0.02px;}
 section.landing-page.second div.bottom-text {position: absolute; bottom: 30px;}
 section.landing-page.second p.comment {font-size: 13px; font-family: "Inter"; font-style: normal; font-weight: 600;}
-
 section.landing-page div.scroll-down {position: absolute; left: 50%; transform: translate(-50%, 0); bottom: 30px; height: 40px;}
 section.landing-page div.scroll-down img {position: absolute; left: 50%; transform: translate(-50%, 0); top: 0; width: 15px;}
 section.landing-page div.scroll-down p {font-size: 12px; font-weight: 700; left: 50%; margin-top: 30px;}
@@ -116,7 +115,6 @@ section.about div.left-container p.sub-font {font-size: 30px; letter-spacing: -0
 section.about div.right-container {position: absolute; width: 37%; right: 0; margin-top: 204px; font-weight: 300; text-align: left;}
 section.about div.right-container p {font-size: 20px; letter-spacing: -0.5px; line-height: 36px;}
 section.about div.right-container p + p {margin-top: 50px;}
-
 section.about-skills {position: relative; background: transparent radial-gradient(closest-side at 50% 37%, #C5D8A9 0%, #DEEFBC 50%, #FFFCF4 100%) 0% 0% no-repeat padding-box; opacity: 1;}
 section.about-skills div {top: 190px;}
 section.about-skills div p {font-size: 20px; letter-spacing: -0.36px; line-height: 28px; font-weight: 400;}
@@ -126,13 +124,11 @@ section.about-skills div.left-container p + p {margin-top: 60px;}
 section.about-skills div.right-container {position: absolute; right: 0; top: 0;}
 section.about-skills div.right-container h4 {font-size: 30px; letter-spacing: -0.54px; font-weight: 800; line-height: 36px; color: #95AF6D; margin-bottom: 20px;}
 section.about-skills div.right-container.ko h4 {font-size: 40px; font-weight: 800; line-height: 60px; color: #95AF6D; margin-bottom: 20px;}
-
 section.about-skills div.right-container div.bottom-box {margin-top: 60px;}
 section.about-skills div.button {position: absolute; left: 50%; transform: translate(-50%, 0); top: 63%; width: 198px; height: 57px; }
 section.about-skills div.button img {width: 100%;}
 section.about-skills div.button a {display: block; position: absolute; padding: 10px 43px; border-radius: 30px; top: 18px; right: 0; font-size: 12px; background-color: #95AF6D; color: #FFFCF4; font-weight: 500;}
 section.about-skills div.button a:hover {background-color: #FFFCF4; color: #95AF6D; border: 1px solid #95AF6D; box-sizing: border-box;}
-
 section.about-skills div.background-text {position: absolute;}
 section.about-skills div.background-text img {width: 100%; opacity: 0.5;}
 section.about-skills div.background-text.right {position: absolute; width: 220px; height: 628px; right: 268px; top: -155px;}
@@ -146,7 +142,6 @@ section.projects p.center-text {position: absolute; text-align: center; font-siz
 section.projects p.right-bottom {position: absolute; font-size: 13px; text-align: left; font-weight: 600; letter-spacing: 0.02px; line-height: 18px; right: 0; bottom: 58px; color: #AD576B;}
 
 section.projects-extra {position: relative; width: 100%; background: url(../img/projectExtraBig.jpg) center center no-repeat; width: 100%; background-size: cover; }
-
 section.projects-extra ul.selection {display: flex; flex-direction: row; justify-content: space-evenly; margin-top: 140px;}
 section.projects-extra ul.selection li {position: relative; width: 310px;}
 section.projects-extra ul.selection li a {display: block;}
@@ -181,7 +176,6 @@ section.web-publishing.two ul.selection li em {color: #A892FF;}
 section.web-publishing.two ul.selection li.main em {color: #FFF6E2;}
 section.web-publishing.two ul.selection li:hover span {background-color: #A892FF;}
 section.web-publishing.two ul.selection li:hover em.text {color: #FFF6E2;}
-
 section.web-publishing.two div.right-box div.programs h4 {color: #A892FF;}
 section.web-publishing.two div.left-bottom {background-color: #A892FF;}
 
@@ -209,8 +203,6 @@ section.web-design.one div.left-box ul.color-box li.two {background-color: #FAB1
 section.web-design.one div.left-box ul.color-box li.three {background-color: #FFF4BA;}
 section.web-design.one div.left-box ul.color-box li.four {background-color: #F5E2AD;}
 
-
-
 section.contact {position: relative; background: url(../img/ContactBackgroundBig.jpg) center center no-repeat; width: 100%; background-size: cover;}
 section.contact div.right-info {position: absolute; right: 0; bottom: 88px;}
 section.contact div.right-info h4 {font-size: 44px; font-weight: 800; letter-spacing: 0.04px; line-height: 54px; color: #FFA995;}
@@ -225,10 +217,8 @@ section.contact div.right-info ul.social-link li:hover {background-color: #FFFCF
 section.contact div.right-info ul.social-link li + li:hover{background-color: #FFFCF4; color: #FAE098;}
 
 
-
-
 /* section module */
-section.web-publishing {position: relative;}
+section.web-publishing {position: relative; padding-top: 131px;}
 ul.table-content {position: relative; display: flex; flex-direction: row; justify-content: space-between; margin-bottom: 78px;}
 ul.table-content li {height: 100%;}
 ul.table-content li p {font-size: 14px; letter-spacing: 0.02px; line-height: 20px; font-family: "Gelasio"; font-weight: 400;}
@@ -237,12 +227,9 @@ ul.table-content li.project-name{margin-right: 400px;}
 ul.table-content li.project-name p {padding: 4px 28px; box-sizing: border-box;}
 ul.table-content li.project-type { padding: 10px 0; margin-right: 226px;}
 ul.table-content li.project-comment {padding: 10px 0;}
-
 section.web-publishing div.content-wrapper {display: flex; justify-content: space-around; width: 100%;}
 section.web-publishing div.left-box {position: relative; width: 50%;}
 section.web-publishing div.left-box div.back-image {position: relative; width: 100%; height: 70%; border-radius: 15px; box-shadow: 2px 2px 5px #00000029; background-color: #FFFCF4;}
-
-
 section.web-publishing div.image {position: absolute; width: 80%; height: 95%; top: 20px; left: 50%; transform: translate(-50%, 0); overflow-y: scroll; border-radius: 10px; box-shadow: 2px 2px 5px #00000029;}
 section.web-publishing div.image img {width: 100%;}
 
@@ -264,8 +251,7 @@ section.web-publishing ul.selection li em { position: absolute; font-size: 11px;
 section.web-publishing ul.selection li em.num {position: absolute; font-size: 15px; top: 28px; left: 69px;}
 section.web-publishing ul.selection li img {position: absolute; width: 88px; height: 80px; top: 9px; left: 9px;}
 
-
-section.web-design {position: relative; background-color: #FFFCF4;}
+section.web-design {position: relative; padding-top: 130px; background-color: #FFFCF4;}
 section.web-design div.content-wrapper {display: flex; justify-content: space-around; width: 100%;}
 section.web-design div.left-box {width: 35%;}
 section.web-design div.left-box div.title {color: #111; top: 0; left: 0; margin-bottom: 40px;}
@@ -295,7 +281,6 @@ section.web-design.slideIn div.left-box div.title h4 {
 }
 
 section.web-design div.left-box div.title p.sub {font-size: 33px; letter-spacing: 0.03px; line-height: 40px;} 
-section.web-design div.left-box div.description {}
 section.web-design div.left-box div.description p {font-size: 15px; letter-spacing: 0.02px; line-height: 30px; font-weight: 400; margin-bottom: 50px;}
 section.web-design div.left-box ul.color-box {width: 100%; height: 80px; display: flex; justify-content: space-between;} 
 section.web-design div.left-box ul.color-box li {width: 80px; background-color: black;}
